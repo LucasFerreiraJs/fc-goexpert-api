@@ -5,8 +5,6 @@ import (
 	"github.com/spf13/viper"
 )
 
-var cfg *config
-
 type config struct {
 	DBDriver      string `mapstructure:"BD_DRIVER"`
 	DBHost        string `mapstructure:"BD_HOST"`
@@ -24,6 +22,7 @@ type config struct {
 // func init()
 
 func LoadConfig(path string) (*config, error) {
+	var cfg *config
 	//..
 	viper.SetConfigName("app_config")
 	viper.SetConfigType("env")
