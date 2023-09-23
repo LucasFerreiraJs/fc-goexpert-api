@@ -13,7 +13,7 @@ func NewProduct(db *gorm.DB) *Product {
 	return &Product{DB: db}
 }
 
-func (p *Product) Create(product entity.Product) error {
+func (p *Product) Create(product *entity.Product) error {
 	return p.DB.Create(product).Error
 }
 
