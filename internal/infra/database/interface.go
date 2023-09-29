@@ -1,6 +1,8 @@
 package database
 
-import "github.com/lucasferreirajs/fc-goexpert/apis/internal/entity"
+import (
+	"github.com/lucasferreirajs/fc-goexpert/apis/internal/entity"
+)
 
 type UserInterface interface {
 	Create(user *entity.User) error
@@ -10,7 +12,7 @@ type UserInterface interface {
 type ProductInterface interface {
 	Create(product *entity.Product) error
 	FindAll(page, limit int, sort string) ([]entity.Product, error)
-	FindById(id string) (entity.User, error)
+	FindById(id string) (*entity.Product, error)
 	Update(product *entity.Product) error
 	Delete(id string) error
 }
