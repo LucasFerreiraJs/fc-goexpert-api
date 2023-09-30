@@ -1,6 +1,8 @@
 package database
 
 import (
+	"fmt"
+
 	"github.com/lucasferreirajs/fc-goexpert/apis/internal/entity"
 	"gorm.io/gorm"
 )
@@ -45,7 +47,14 @@ func (p *Product) Update(product *entity.Product) error {
 	if err != nil {
 		return err
 	}
-	return p.DB.Save(product).Error
+	fmt.Printf("product recebido %v", product)
+	print("\n")
+	print("\n")
+	err = p.DB.Save(product).Error
+	if err != nil {
+		return err
+	}
+	return nil
 }
 
 func (p *Product) Delete(id string) error {
