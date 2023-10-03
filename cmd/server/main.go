@@ -32,7 +32,10 @@ func main() {
 	r.Use(middleware.Logger)
 	r.Post("/products", productHandler.CreateProduct)
 	r.Get("/products/{id}", productHandler.GetProduct)
+	r.Get("/products", productHandler.GetProducts)
 	r.Put("/products/{id}", productHandler.UpdateProduct)
+	r.Delete("/products/{id}", productHandler.DeleteProductById)
+
 	// http.HandleFunc("/products", productHandler.CreateProduct)
 	http.ListenAndServe("127.0.0.1:8000", r)
 
