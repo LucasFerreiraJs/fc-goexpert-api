@@ -13,7 +13,10 @@ Content-Type: appliscation/json
 
 ###
 
+GET http://localhost:8000/products
+Content-Type: appliscation/json
 
+###
 PUT http://localhost:8000/products/6b8e79ff-5a33-43a1-b640-a05d1b03d9f0
 Content-Type: appliscation/json
 
