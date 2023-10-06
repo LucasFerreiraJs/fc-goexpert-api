@@ -9,11 +9,13 @@ Content-Type: appliscation/json
 ###
 
 GET http://localhost:8000/products/6b8e79ff-5a33-43a1-b640-a05d1b03d9f0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTYzODY2NDIsInN1YiI6IjFlODk3ZmEzLTQ2MTktNDM0ZC1iOTYzLTIzNDNjNDE3NDJlMyJ9.HK8V37nyFIDfMysuZ1q2pyfHHQfTtelU305Ih6tgbQI
 Content-Type: appliscation/json
 
 ###
 
 GET http://localhost:8000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTYzODcxMjksInN1YiI6IjFlODk3ZmEzLTQ2MTktNDM0ZC1iOTYzLTIzNDNjNDE3NDJlMyJ9.5vc7ldFtZd9PtmgG5R6kduQmaJTJD94-DiII0LxXpvY
 Content-Type: appliscation/json
 
 ###
